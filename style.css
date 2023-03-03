@@ -435,7 +435,7 @@ label {
     position: absolute;
     width:500px;
     height: 504px;
-    left: 40px;
+    left: 0px;
     top: 280px;
     background: blue;
     z-index: 0;
@@ -488,7 +488,7 @@ label {
     .anime-sinopse>p {
         z-index: 1;
         position: relative;
-        max-width: 530px;
+       
         width: 50%;
         font-family: var(--fontePrincipal);
         font-size: 1.1em;
