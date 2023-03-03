@@ -433,7 +433,7 @@ label {
 
   .cont1 {
     position: absolute;
-    width:100%;
+    width:500px;
     height: 504px;
     left: 40px;
     top: 280px;
@@ -442,7 +442,7 @@ label {
     display:flex;
       flex-direction:column;
     justify-content: flex-end;
-      align-items:center;
+      align-items:flex-start;
    
       
 }
