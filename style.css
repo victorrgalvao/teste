@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --fontePrincipal: roboto;
+    --fonteSecundaria: lobster;
+    --cor1: #C726FF;
+    --cor2: #26FFF2;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    padding-bottom: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.background {
+    position: relative;
+    left: 280px;
+    top: 0px;
+    width: 100%;
+    height: 800px;
+
+
+}
+
+
+.top-blur {
+    position: absolute;
+    width: 100%;
+    height: 203px;
+    left: -51px;
+    top: -42px;
+    background: #000000;
+    border: 1px solid #000000;
+    filter: blur(60px);
+
+}
+
+.bottom-blur {
+    position: absolute;
+    width: 100%;
+    height: 225px;
+    left: 0px;
+    top: 658px;
+    background: #000000;
+    filter: blur(100px);
+
+}
+
+.middle-blur {
+    position: absolute;
+    width: 1479px;
+    height: 909px;
+    left: -81px;
+    top: -1px;
+    background: linear-gradient(89.51deg, #000000 29.05%, rgba(0, 0, 0, 0.340946) 65.63%, rgba(0, 0, 0, 0) 89.6%);
+}
+
+.header {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 20px 0px;
+    top: 0;
+
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-menu>ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+.header>a {
+    font-family: var(--fonteSecundaria);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.h1-detail {
+    font-size: 32px;
+    background: linear-gradient(172.79deg, #C726FF 39.07%, #26FFF2 76.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.link-menu>a {
+    font-family: var(--fontePrincipal);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.link-menu-join {
+    font-family: var(--fontePrincipal);
+    font-size: 1.2em;
+    font-weight: 500;
+    display: none;
+}
+
+.join-now {
+    height: 41px;
+    border: 2px solid white;
+    text-align: center;
+    line-height: 41px;
+    border-radius: 0px 20px;
+    font-family: var(--fontePrincipal);
+    font-size: 1.2em;
+    font-weight: 500;
+    background: linear-gradient(172.79deg, #C726FF 39.07%, #26FFF2 76.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.join-now>a {
+    margin: 0 30px;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+}
+
+.search-div>img {
+    margin-right: 25px;
+
+}
+
+.cont1 {
+    position: absolute;
+    width: 628px;
+    height: 504px;
+    left: 36px;
+    top: 280px;
+    /* background: #FF3326; */
+    z-index: 1;
+}
+
+.season>h2 {
+    font-family: var(--fontePrincipal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.anime-name>h2 {
+    font-family: var(--fontePrincipal);
+    font-weight: 700;
+    font-size: 70px;
+    font-style: normal;
+    width: 100%;
+}
+
+.anime-sinopse {
+    margin-top: 80px;
+}
+
+.anime-sinopse>p {
+    z-index: 1;
+    position: relative;
+    max-width: 530px;
+    width: 100%;
+    font-family: var(--fontePrincipal);
+    font-size: 1.1em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.star-rating input {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.star-rating input:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 34px;
+    opacity: 0.1;
+    transition: .5s;
+    text-shadow: 0 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.star-rating input:hover~input::before,
+.star-rating input:hover:before,
+.star-rating input:checked~input::before,
+.star-rating input:checked:before {
+    background: linear-gradient(172.79deg, #C726FF 39.07%, #26FFF2 76.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    opacity: 1;
+}
+
+.gener-info {
+    display: flex;
+}
+
+.gener-info>div {
+    background: #000000;
+    margin-right: 10px;
+}
+
+.drama {
+    border: 1px solid #C726FF;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+
+.drama>a {
+    color: var(--cor1);
+    font-family: var(--fontePrincipal);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.anime {
+
+    border: 1px solid #26FFF2;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+.anime>a {
+    color: #26FFF2;
+    font-family: var(--fontePrincipal);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.action {
+    border: 1px solid #FF3326;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+.action>a {
+    color: #FF3326;
+    font-family: var(--fontePrincipal);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn-watch {
+    width: 180px;
+    height: 52px;
+    background: linear-gradient(113.88deg, #C726FF 38.69%, #26FFF2 78.6%);
+    border-radius: 0px 20px;
+    display: flex;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    align-items: center;
+    font-family: var(--fontePrincipal);
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-right: 58px;
+}
+
+.btn-watch:hover {
+    background: linear-gradient(113.88deg, #26ff5c 38.69%, #26FFF2 78.6%);
+}
+
+.btn-add {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 38px;
+}
+
+.btn-add>a {
+    color: rgba(187, 187, 187, 0.69);
+    font-family: var(--fontePrincipal);
+    font-weight: 500;
+    font-size: 1.0em;
+}
+
+.btn-add>a>i {
+    padding-right: 10px;
+    color: rgba(187, 187, 187, 0.69);
+}
+
+.btn-add>a>i {
+    padding-right: 10px;
+    color: rgba(187, 187, 187, 0.69);
+}
+
+.btn-div {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.adicionar {
+    font-family: var(--fontePrincipal);
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.cont2 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 280px;
+    height: 100%;
+}
+
+.card>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0px;
+    border: 2px solid white;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+@media(max-width:950px) {
+
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .link-menu-join {
+        display: block;
+    }
+
+
+    .main-menu>ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        top: 80px;
+        left: -100%;
+        display: block;
+        transition: all .5s;
+        z-index: 2;
+        text-align: center;
+
+
+    }
+
+    .main-menu>ul>li {
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
+    #check:checked~ul {
+        background: black;
+        left: 0;
+        /* z-index: 2; */
+    }
+
+    .join-now {
+        display: none;
+    }
+
+    .search-div>img {
+        display: none;
+    }
+
+    .checkbutton {
+        display: block;
+    }
+
+  .cont1 {
+    position: absolute;
+    width:500px;
+    height: 504px;
+    left: 40px;
+    top: 280px;
+    background: blue;
+    z-index: 0;
+    display:flex;
+      flex-direction:column;
+    justify-content: flex-end;
+      align-items:center;
+     padding:100px;
+      
+}
+
+    .cont2 {
+        z-index: 0;
+    }
+
+    .card {
+        width: 23%;
+        height: 100%;
+    }
+    .star-rating {
+       
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        
+        
+    }
+    
+    .season>h2 {
+        font-family: var(--fontePrincipal);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6em;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .anime-name>h2 {
+        font-family: var(--fontePrincipal);
+        font-weight: 700;
+        font-size: 2.5rem;
+        font-style: normal;
+        width: 100%;
+    }
+
+    .anime-sinopse {
+        margin-top: 80px;
+    }
+
+    .anime-sinopse>p {
+        z-index: 1;
+        position: relative;
+        max-width: 530px;
+        width: 50%;
+        font-family: var(--fontePrincipal);
+        font-size: 1.1em;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+
+@media(max-width:390px) {
+    .star-rating {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+    .cont1 {
+        position: absolute;
+        left: 36px;
+        top: 280px;
+        width: 100%;
+        height: auto;
+        /* background: #FF3326; */
+        /* z-index: 1; */
+
+    }
+
+    .season>h2 {
+        font-family: var(--fontePrincipal);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6em;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .anime-name>h2 {
+        font-family: var(--fontePrincipal);
+        font-weight: 700;
+        font-size: 2.5rem;
+        font-style: normal;
+        width: 100%;
+    }
+
+    .anime-sinopse {
+        margin-top: 80px;
+    }
+
+    .anime-sinopse>p {
+        z-index: 1;
+        position: relative;
+        max-width: 530px;
+        width: 50%;
+        font-family: var(--fontePrincipal);
+        font-size: 1.1em;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .cards {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+
+    }
+
+    .card {
+        width: 280px;
+        height: 100%;
+    }
+
+    .card>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0px;
+        border: 2px solid white;
+    }
+
+}
